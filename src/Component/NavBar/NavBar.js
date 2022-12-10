@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Styled from "styled-components";
 
 const NavWrapper = Styled.nav`
+    font-family: 'Poppins', sans-serif;
     position : absolute;
     top: 0;
     left: 50%;
@@ -24,6 +25,11 @@ const NavLinks = Styled(Link) `
     margin-top: 3rem;
     font-size: 1.2rem;
     font-weight: bold;
+    transition: 0.4s;
+    &:hover {
+        color: #080C21;
+        transition: 0.4s;
+    }
 `;
 
 export default function NavBar() {
