@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Styled from "styled-components";
 import HeaderBG from "../.././Img/HeaderBG.svg";
 
+//cette partie est le code qui permet de styliser le code
+
 const DefiHeader = Styled.header`
     font-family: 'Poppins', sans-serif;
     background-image: url(${HeaderBG});
@@ -107,6 +109,7 @@ const Button = Styled.button`
     }
 `;
 
+//cette partie est le code qui permet de créer le formulaire
 
 export default function Defi() {
 
@@ -120,7 +123,7 @@ export default function Defi() {
         setPassword(e.target.value);
     }
 
-    //la securite du formulaire n est pas 
+    //cette partie est le code qui permet de vérifier si les informations de connexion sont correctes
 
     function test() {
         if (userName === "A-TechPro" && password === "Admin123") {
